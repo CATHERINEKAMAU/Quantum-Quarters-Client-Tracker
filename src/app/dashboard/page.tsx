@@ -47,7 +47,7 @@ export default function DashboardPage() {
         totalClients: clientsRes.count || 0,
         totalPayments: (paymentsRes.data || []).length,
         totalAmount,
-        recentPayments: (recentRes.data || []) as Stats['recentPayments'],
+        recentPayments: (recentRes.data || []) as unknown as Stats['recentPayments'],
       })
       setLoading(false)
     }
