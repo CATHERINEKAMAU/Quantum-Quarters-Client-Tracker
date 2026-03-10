@@ -10,7 +10,8 @@ import {
   Settings,
   Building2,
   LogOut,
-  Upload
+  Upload,
+  Printer
 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import { useRouter } from 'next/navigation'
@@ -20,6 +21,7 @@ const navItems = [
   { href: '/clients', label: 'Clients', icon: Users },
   { href: '/payments', label: 'Payments', icon: CreditCard },
   { href: '/documents', label: 'Documents', icon: FileText },
+  { href: '/report', label: 'Print Report', icon: Printer },
   { href: '/import', label: 'Import Excel', icon: Upload },
   { href: '/settings', label: 'Settings', icon: Settings },
 ]
