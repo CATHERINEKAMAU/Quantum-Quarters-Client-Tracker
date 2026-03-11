@@ -62,7 +62,7 @@ export default function DashboardPage() {
 
   return (
     <AppLayout>
-      <div className="p-8">
+      <div className="p-4 md:p-8">
         {/* Header */}
         <div className="mb-8">
           <h1 className="font-display font-bold text-2xl text-slate-900">Dashboard</h1>
