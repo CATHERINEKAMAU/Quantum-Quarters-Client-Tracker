@@ -53,6 +53,16 @@ body {
   .badge-full {
     @apply bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-medium px-2.5 py-0.5 rounded-full;
   }
+
+  /* Mobile responsive table wrapper */
+  .table-wrapper {
+    @apply overflow-x-auto -mx-4 md:mx-0;
+  }
+
+  /* Page padding responsive */
+  .page-padding {
+    @apply p-4 md:p-8;
+  }
 }
 
 .sidebar-link {
@@ -65,4 +75,18 @@ body {
 
 .sidebar-link:not(.active) {
   @apply text-slate-600 hover:bg-slate-100 hover:text-slate-900;
+}
+
+/* Modal responsive */
+@media (max-width: 640px) {
+  .modal-content {
+    margin: 0;
+    border-radius: 1rem 1rem 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
 }
